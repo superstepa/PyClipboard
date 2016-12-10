@@ -1,8 +1,12 @@
 * PyClipboard
+A simple python class that lets the clipboard be used as a resource.
+No dependencies other than tkinter.
 ** Example Usage
 #+BEGIN_SRC python
 with PyClipboard() as clipboard:
     clipboard.clear_clipboard()
     clipboard.copy_to_clipboard("Hello World")
-    clipboard.paste()
+    paste = clipboard.paste()
+    #Prints Hello World
+    print(paste)
 #+END_SRC

@@ -15,6 +15,7 @@ class PyClipboard(Tk):
         self.destroy()
 
     def clear_clipboard(self):
+        """Clears the clipboard"""
         try:
             # Python2
             self.clipboard.clear()
@@ -31,6 +32,7 @@ class PyClipboard(Tk):
             self.clipboard_append(text)
 
     def paste(self):
+        """Returns the text that is currently in the clipboard"""
         try:
             # Python2
             return self.clipboard.get()
