@@ -1,0 +1,8 @@
+* PyClipboard
+** Example Usage
+#+BEGIN_SRC python
+with PyClipboard() as clipboard:
+    clipboard.clear_clipboard()
+    clipboard.copy_to_clipboard("Hello World")
+    clipboard.paste()
+#+END_SRC
